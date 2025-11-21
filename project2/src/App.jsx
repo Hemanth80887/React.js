@@ -8,6 +8,7 @@ import Page6 from "./pages/Page6";
 import Page7 from "./pages/Page7";
 import Page8 from "./pages/Page8";
 import Page9 from "./pages/Page9";
+import Page10 from "./pages/Page10";
 
 //react functional component
 
@@ -22,8 +23,9 @@ function App(props) {
             <Page5/> 
             <Page6/>  
             <Page7/> 
-            <Page8/> */}
-            <Page9/>
+            <Page8/> 
+            <Page9/>*/}
+            <Page10/>
 
             
         </div>

@@ -14,9 +14,15 @@ class Page9 extends Component {
         })
     }
     handler2(val){
-        this.setState({
-            Quantity :this.state.Quantity - val
-        })
+        if(this.state.Quantity <=1){
+            this.setState({
+                Quantity:1
+            })
+        }else{
+            this.setState({
+                Quantity: this.state.Quantity - val
+            })
+        }
     }
 
     render(){
@@ -24,7 +30,7 @@ class Page9 extends Component {
             <div>
                 <h1>Quantity = {this.state.Quantity}</h1>
                 <button onClick={this.handler1.bind(this,1)}>Increment</button>
-                <button onClick={this.handler2.bind(this,1)}>Decrement</button>
+                <button disabled ={this.state.Quantity<=1}  onClick={this.handler2.bind(this,1)}>Decrement</button>
             </div>
         )
     }
